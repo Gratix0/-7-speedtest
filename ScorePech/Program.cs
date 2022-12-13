@@ -20,6 +20,7 @@ namespace ScorePech
                     if (start == true)
                     {
                         t.Start();
+                       
                         while (true)
                             {
                                 if (t.ElapsedMilliseconds / 1000 == 60)
@@ -29,6 +30,7 @@ namespace ScorePech
                                     start = false;
                                     break;
                                 }
+                            do {TimeR.Count(1); } while (false);
                             }
                     }
                     
@@ -50,8 +52,8 @@ namespace ScorePech
                 user.sInSec = user.sInMin / 60.0;
 
                 string text = $"\n {user.username} {user.sInSec} {user.sInMin}";
-                File.AppendAllText("C:\\Users\\Kliker\\source\\repos\\ScorePech\\records.txt", text);
-                string records = File.ReadAllText("C:\\Users\\Kliker\\source\\repos\\ScorePech\\records.txt");
+                File.AppendAllText("C:\\Users\\Александр\\Documents\\GitHub\\-7-speedtest\\records.txt", text);
+                string records = File.ReadAllText("C:\\Users\\Александр\\Documents\\GitHub\\-7-speedtest\\records.txt");
                 Console.WriteLine("Таблица рекордов");
                 Console.WriteLine(records);
                 Console.WriteLine();

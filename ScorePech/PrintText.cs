@@ -8,7 +8,7 @@ namespace ScorePech
 {
     internal static class PrintText
     {
-        static string text = File.ReadAllText("C:\\Users\\Kliker\\source\\repos\\ScorePech\\text.txt");
+        static string text = File.ReadAllText("C:\\Users\\Александр\\Documents\\GitHub\\-7-speedtest\\text.txt");
         static char[] chars = text.ToCharArray();
 
         static public int InpText()
@@ -21,7 +21,7 @@ namespace ScorePech
                 {
                     if (count.Contains(i))
                     {
-                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.Write(chars[i]);
                         Console.ResetColor();
                     }
